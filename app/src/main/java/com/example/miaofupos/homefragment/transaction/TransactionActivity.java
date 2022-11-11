@@ -56,7 +56,7 @@ public class TransactionActivity extends BaseActivity implements View.OnClickLis
     private String endTime = "";
     //页码
     private int mCount = 1;
-    // 请求数据数量
+    //请求数据数量
     private int pageSize = 20;
 
     @Override
