@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/new_theme_color">
+
+
+            <RelativeLayout
+                android:id="@+id/merchant_squery_relative"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <LinearLayout
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="25dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/back_whilte_left" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="终端查询"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/terminal_ed_search"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_below="@+id/merchant_squery_relative"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="22dp"
+                android:background="@drawable/home_team_search_ed_bg"
+                android:drawableLeft="@mipmap/while_query"
+                android:drawablePadding="8dp"
+                android:hint="请输入机具序列号"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#FFFFFF"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:id="@+id/terminal_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/terminal_ed_search"
+                android:layout_alignLeft="@+id/terminal_ed_search"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/terminal_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="条"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/terminal_screening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/terminal_line1"
+                android:layout_alignBottom="@+id/terminal_line1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="22dp"
+                android:drawableLeft="@mipmap/query_screening"
+                android:drawablePadding="9dp"
+                android:gravity="center"
+                android:text="筛选"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/terminal_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/terminal_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+    <!--侧边栏内容-->
+    <RelativeLayout
+
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        >
+
+
+        <include layout="@layout/merchants_query_content_layout_item" />
+
+        <!--添加脚布局-->
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/ine1"
+            android:background="#E5E5E5" />
+
+        <RadioGroup
+            android:id="@+id/terminal_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/terminal_determine_rb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/choose_rabtn1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="@drawable/rbtn_choose_txt"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/terminal_cancel_rb"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/choose_rabtn1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@drawable/rbtn_choose_txt"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

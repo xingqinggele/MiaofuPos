@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:background="@color/new_theme_color"
+                android:id="@+id/merchant_squery_relative"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <LinearLayout
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="25dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/back_whilte_left" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分兑换"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+                 <TextView
+                     android:id="@+id/integral_most_car"
+                     android:layout_marginRight="20dp"
+                     android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购物车"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:dividerHeight="1dp"
+                    android:divider="#E5E5E5"
+                    android:scrollbars="none"
+                    android:id="@+id/lv_menu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#F4F4F4" />
+
+                <View
+                    android:background="#E5E5E5"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ListView
+                            android:divider="@null"
+                            android:scrollbars="none"
+                            android:id="@+id/lv_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/rl_goods_fits_car"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_gravity="end|bottom"-->
+<!--            android:layout_margin="16dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_goods_car_nums"-->
+<!--                android:layout_width="63dp"-->
+<!--                android:layout_height="63dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@mipmap/gouwuche" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/good_numtv"-->
+<!--                android:layout_width="18dp"-->
+<!--                android:layout_height="18dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:background="@drawable/sp_common_circle2yellow"-->
+<!--                android:gravity="center"-->
+<!--                android:text="0"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="12sp" />-->
+<!--        </RelativeLayout>-->
+
+    </FrameLayout>
+
+
+</LinearLayout>

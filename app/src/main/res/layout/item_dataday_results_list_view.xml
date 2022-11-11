@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_data_day_results_list_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="20dp"
+        android:text="2020-12-13"
+        android:textColor="#ff969696"
+        android:textSize="13sp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/main_me_line_bg">
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="19dp"
+            android:text="新增伙伴"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_partner_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="0人"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv1" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="新增商户"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv1"
+            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv1" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_merchants_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0户"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv2"
+            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"
+            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv2" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="总交易额"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv2"
+            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv2" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_total_volume_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88888.00元"
+            android:textColor="#ff969696"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv3"
+            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"
+            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv3" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/mu_1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv3"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv3">-->
+
+<!--            <View-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="5dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="#ff733c" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="快钱"-->
+<!--                android:textColor="#ff733c"-->
+<!--                android:textSize="12sp" />-->
+
+<!--        </LinearLayout>-->
+
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="刷卡交易"
+            android:textColor="#ffbdbdbd"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv3"
+            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_total_volume_num" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_tone_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00元"
+            android:textColor="#ffbdbdbd"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv4"
+            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"
+            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv4" />
+
+        <TextView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="19dp"
+            android:id="@+id/item_data_day_results_item_tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="扫码交易"
+            android:textColor="#ffbdbdbd"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv4"
+            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv4" />
+
+        <TextView
+            android:id="@+id/item_data_day_results_item_flash_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00元"
+            android:textColor="#ffbdbdbd"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv5"
+            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"
+            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv5" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_tv6"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="Pay交易"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv5"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv5" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_scan_total"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0.00元"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv6"-->
+<!--            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv6" />-->
+
+<!--        <LinearLayout-->
+
+<!--            android:id="@+id/mu_2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv6"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv6">-->
+
+<!--            <View-->
+<!--                android:layout_width="5dp"-->
+<!--                android:layout_height="5dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:background="#3c98ff" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:text="盛刷"-->
+<!--                android:textColor="#3c98ff"-->
+<!--                android:textSize="12sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_tv7"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="刷卡交易"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/mu_2"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/mu_2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_ss_tone_total"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0.00元"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv7"-->
+<!--            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv7" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_tv8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginBottom="14dp"-->
+<!--            android:text="扫码交易"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintLeft_toLeftOf="@+id/item_data_day_results_item_tv7"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/item_data_day_results_item_tv7" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/item_data_day_results_item_ss_flash_total"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="0.00元"-->
+<!--            android:textColor="#ffbdbdbd"-->
+<!--            android:textSize="12sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_tv8"-->
+<!--            app:layout_constraintRight_toRightOf="@+id/item_data_day_results_item_partner_num"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_tv8" />-->
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

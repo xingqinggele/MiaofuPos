@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative_i"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/new_theme_color">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:text="关于信用卡"
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/simple"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+            <TextView
+                android:layout_marginTop="19dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【用户需知】"
+                android:textColor="#ff9f9f9f"
+                android:textSize="13sp"
+                />
+            <TextView
+                android:letterSpacing="0.05"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="
+1. 结算周期：日结，任意订单达到可结算标准后次日可结算，可在平台收益明细内查看。\n2. 结算方式：代理商（签约方）开票，我司核实无误后付款，可在平台内直接提现，提现由拉卡拉支付股份有限公司收取手续费 2 元/笔。"
+                android:textColor="#ff9f9f9f"
+                android:textSize="12sp"
+                />
+            <Button
+                android:id="@+id/btn"
+                android:layout_marginRight="43dp"
+                android:layout_marginLeft="43dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/login_btn_on_bg"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="我要办卡"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

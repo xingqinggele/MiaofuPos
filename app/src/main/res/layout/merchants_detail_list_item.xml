@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_me_line_bg"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/item_sn_num_tv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_sn_num_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/item_sn_num_tv"
+        android:id="@+id/item_terminal_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_terminal_num_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/item_sn_num_tv"
+        android:id="@+id/item_month_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        app:layout_constraintBottom_toBottomOf="@+id/item_month_money_tv"
+        app:layout_constraintTop_toTopOf="@+id/item_month_money_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/item_month_score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_month_score_tv"
+        app:layout_constraintLeft_toLeftOf="@+id/item_sn_num_tv"
+        android:id="@+id/item_total_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_total_money_tv"
+       app:layout_constraintTop_toTopOf="@+id/item_total_money_tv"
+        android:id="@+id/item_total_score_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <!--标题框-->
+    <RelativeLayout
+        android:id="@+id/relative_title"
+        android:background="@color/new_theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <!--返回键-->
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+        <!--标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="报件修改"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--内容部分-->
+    <ScrollView
+        android:id="@+id/scro_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_bt"
+        android:layout_below="@+id/relative_title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/merchant_detail_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/main_me_line_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/feilv_relative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_ts1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_ts2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_ts1"
+                    android:text="费率"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/feilv_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/quote_activity_select_iv"
+                    android:drawablePadding="11dp"
+                    android:gravity="center"
+                    android:hint="请选择费率"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/merchants_detail_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="①上传银行卡正面"
+                    android:textColor="#ff858585"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/merchants_detail_tv3"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/id_card_is"
+                    android:layout_width="151dp"
+                    android:layout_height="103dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="18dp"
+                    android:scaleType="fitXY"
+                    fresco:placeholderImage="@mipmap/small_merchants_card4" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tv1"
+                    android:text="银行卡号"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/b_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/quote_tv11"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入银行卡号"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tvv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tvv55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tvv4"
+                    android:text="开户名"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/quote_xy_card_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/quote_tvv55"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入开户名"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tvv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tvv66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tvv5"
+                    android:text="预留手机号"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:inputType="phone"
+                    android:id="@+id/quote_xy_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/quote_tvv66"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入预留手机号"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:id="@+id/province_relative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tv55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tv5"
+                    android:text="开户行省市"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/province_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@mipmap/quote_activity_select_iv"
+                    android:drawablePadding="11dp"
+                    android:gravity="center"
+                    android:hint="请选择开户行省市"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tvn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tvn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tvn1"
+                    android:text="银行编码"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/bank_code_ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="-1dp"
+                    android:layout_toRightOf="@+id/quote_tvn3"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入银行名称"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <com.example.miaofupos.views.MyListView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/addListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/quote_tvn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/quote_tvn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/quote_tvn2"
+                    android:text="开户行网点"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/bankSite_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/quote_tvn4"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入开户行网点"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <com.example.miaofupos.views.MyListView
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/zhListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/new_theme_color"
+        android:text="修改"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+  >
+    <RelativeLayout
+        android:background="@color/new_theme_color"
+        android:id="@+id/merchant_squery_relative"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的推荐人"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+   <android.support.constraint.ConstraintLayout
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:background="@drawable/main_me_line_bg"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <com.facebook.drawee.view.SimpleDraweeView
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:id="@+id/home_team_logo"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginLeft="12dp"
+           android:layout_marginTop="20dp"
+           app:layout_goneMarginBottom="20dp"
+           android:layout_marginBottom="18dp"
+           android:scaleType="fitXY"
+           fresco:actualImageScaleType="focusCrop"
+           fresco:layout_constraintLeft_toLeftOf="parent"
+           fresco:layout_constraintTop_toTopOf="parent"
+           fresco:roundAsCircle="true" />
+
+
+
+       <TextView
+           android:id="@+id/home_team_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="15dp"
+           android:layout_marginBottom="5dp"
+           android:textColor="#ff333333"
+           android:textSize="17sp"
+           app:layout_constraintLeft_toRightOf="@+id/home_team_logo"
+           app:layout_constraintTop_toTopOf="@+id/home_team_logo" />
+
+       <View
+           android:id="@+id/home_team_view"
+           android:layout_width="1dp"
+           android:layout_height="16dp"
+           android:layout_marginLeft="10dp"
+           android:background="#DCDCDC"
+           app:layout_constraintBottom_toBottomOf="@+id/home_team_name"
+           app:layout_constraintLeft_toRightOf="@+id/home_team_name"
+           app:layout_constraintTop_toTopOf="@+id/home_team_name" />
+
+       <TextView
+           android:text="111111111"
+           android:id="@+id/home_team_phone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:textColor="#ff333333"
+           android:textSize="13sp"
+           app:layout_constraintBottom_toBottomOf="@+id/home_team_name"
+           app:layout_constraintLeft_toRightOf="@+id/home_team_view"
+           app:layout_constraintTop_toTopOf="@+id/home_team_name" />
+
+       <ImageView
+           android:id="@+id/home_team_phone_btn"
+           android:layout_width="25dp"
+           android:layout_height="25dp"
+           android:layout_marginRight="12dp"
+           android:src="@mipmap/call_phone"
+           app:layout_constraintBottom_toBottomOf="@+id/home_team_logo"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="@+id/home_team_logo" />
+
+       <TextView
+           android:id="@+id/home_team_createTime"
+           app:layout_constraintBottom_toBottomOf="@+id/home_team_logo"
+           app:layout_constraintLeft_toLeftOf="@+id/home_team_name"
+           app:layout_constraintTop_toBottomOf="@+id/home_team_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="注册时间：2020-09-20"
+           android:textColor="#ff878787"
+           android:textSize="12sp"
+           />
+
+   </android.support.constraint.ConstraintLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/item_data_day_results_item_recycler_item_tv"
+        android:layout_marginLeft="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T0交易总额"
+        android:textColor="#ffbdbdbd"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_data_day_results_item_recycler_item_tv"
+        app:layout_constraintTop_toTopOf="@+id/item_data_day_results_item_recycler_item_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00元"
+        android:textColor="#ffbdbdbd"
+        android:textSize="12sp"
+        />
+</android.support.constraint.ConstraintLayout>

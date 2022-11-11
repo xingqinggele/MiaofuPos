@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@mipmap/login_title_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/login_et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/register_activity_phone"
+            android:drawablePadding="10dp"
+            android:hint="请输入密码"
+            android:singleLine="true"
+            android:text="17519491692"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#E5E5E5" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+
+            <EditText
+                android:id="@+id/register_tv_code"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/register_tv_mCode"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/register_activity_code"
+                android:hint="请输入验证码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/register_tv_mCode"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/small_merchants_tv_bg"
+                android:layout_alignParentRight="true"
+                android:textSize="13sp"
+                android:text="获取验证码"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <EditText
+            android:id="@+id/register_et_password"
+            android:textSize="14sp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/register_activity_password"
+            android:hint="请设置密码（6-16位数字与字母组合）"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <View
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <EditText
+            android:id="@+id/register_et_password1"
+            android:textSize="14sp"
+            android:drawablePadding="10dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/register_activity_password"
+            android:hint="请再次确认密码"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <View
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/login_btn_on_bg"
+            android:textColor="@color/white"
+            android:text="注册"
+            android:textSize="15sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"/>
+
+        <TextView
+            android:id="@+id/register_tv_login"
+            android:layout_marginTop="11dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已有账号 去登陆"
+            android:textColor="#ff8d8d8d"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@mipmap/login_botton_iv"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:theme="@style/My_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/register_tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我已同意并阅读《用户相关协议》"
+            android:textColor="#ff8d8d8d"
+            android:textSize="11sp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

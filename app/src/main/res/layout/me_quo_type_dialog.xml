@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@drawable/main_me_line_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择报件类型"
+                android:textColor="#ff434343"
+                android:textSize="15sp"
+                />
+
+            <View
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/view_color" />
+
+
+
+            <com.example.miaofupos.views.MyGridView
+                android:paddingTop="20dp"
+                android:listSelector="@android:color/transparent"
+                android:id="@+id/data_bill_dialog_grid"
+                android:paddingLeft="10dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="25dp"
+                android:numColumns="3"
+                tools:listitem="@layout/item_data_bill_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/data_bill_dialog_btn"
+                android:background="@color/new_theme_color"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_alignParentBottom="true"
+                android:text="确定"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

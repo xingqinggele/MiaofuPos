@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@mipmap/merchants_deteils_title"
+        android:layout_width="match_parent"
+        android:layout_height="242dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <LinearLayout
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/main_left_return" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商户详情"
+                android:textColor="#ff333333"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center"
+            android:layout_width="68dp"
+            android:layout_height="67dp"
+            android:src="@mipmap/me_logo"
+            />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="王小小"
+            android:textColor="#ff747474"
+            android:textSize="18sp"
+            />
+        <TextView
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入网时间：2020-12-10"
+            android:textColor="#ffa0a0a0"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户编号：cy20201210"
+            android:textColor="#ffa0a0a0"
+            android:textSize="13sp"
+            />
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:background="@drawable/main_me_line_bg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+
+        <RadioButton
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/big_merchants2_rbtn_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="TA的设备"
+            android:textColor="@drawable/merchants_deteils_rbtn_txt"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/big_merchants2_rbtn_bg"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:text="TA的交易"
+            android:textColor="@drawable/merchants_deteils_rbtn_txt"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

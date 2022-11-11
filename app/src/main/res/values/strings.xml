@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">秒付通</string>
+    <string name="new_app_name">秒付通</string>
+    <string name="policy_tv"><u>相关隐私政策</u></string>
+    <string name="agreement_tv"><u>相关服务协议</u></string>
+    <string name="version_title">正在下载 :%d%%</string>
+
+    <string name="msg_camera_framework_bug">The camera is occupied or has no camera permission, please check</string>
+    <string name="button_ok">Exit</string>
+    <string name="scan_code">Scan QR Code</string>
+    <string name="open_flash">Turn on the flash</string>
+    <string name="close_flash">Turn off the flash</string>
+    <string name="gallery">Gallery</string>
+    <string name="scan_failed_tip">Scan image failed, please retry.</string>
+</resources>

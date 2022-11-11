@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_me_line_bg"
+    android:layout_marginTop="17dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/item_address_layout">
+
+    <TextView
+        android:id="@+id/name_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="18dp"
+        android:text="李婉婉   13522332234"
+        android:textColor="#ff4b4b4b"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginRight="13dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/address_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="吉林省长春市南关区通钢国际大厦A座101"
+        android:textColor="#ff595959"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/name_phone_tv"
+        app:layout_constraintTop_toBottomOf="@+id/name_phone_tv" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/item_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_tv" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_item"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/checkbox_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/address_tv"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="默认地址"
+        android:textColor="#ff9c9c9c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_item"
+        app:layout_constraintLeft_toRightOf="@+id/checkBox_item"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_item" />
+
+    <TextView
+        android:id="@+id/editor_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@mipmap/editor_iv"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="#ff9c9c9c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_tv"
+        app:layout_constraintRight_toLeftOf="@+id/delete_tv"
+        app:layout_constraintTop_toTopOf="@+id/delete_tv" />
+
+    <TextView
+        android:id="@+id/delete_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="13dp"
+        android:drawableLeft="@mipmap/delete_iv"
+        android:drawablePadding="6dp"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ff9c9c9c"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_item" />
+</android.support.constraint.ConstraintLayout>

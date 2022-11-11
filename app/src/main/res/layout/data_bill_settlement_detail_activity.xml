@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/new_theme_color">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="分润明细"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+
+                android:background="@drawable/main_me_line_bg">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pie_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/main_me_line_bg">
+                <LinearLayout
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <View
+                        android:layout_gravity="center"
+                        android:background="@color/new_theme_color"
+                        android:layout_width="5dp"
+                        android:layout_height="15dp"/>
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分润收入明细"
+                        android:textColor="#ff6c6c6c"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+                <View
+                    android:background="#F1F1F1"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                    <RelativeLayout
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="自身交易笔数"
+                            android:textColor="#ff969696"
+                            android:textSize="13sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/bill_detail_tv1"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="113笔"
+                            android:textColor="#ff969696"
+                            android:textSize="13sp"
+                            />
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自身交易金额"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv2"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自身交易刷卡"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv3"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自身交易闪付"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv4"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自身交易扫码"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv5"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下级整体交易笔数"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv6"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下级整体交易量"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv7"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下级整体交易量刷卡"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="113笔"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下级整体交易量Pay"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv9"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="下级整体交易量扫码"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv10"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="@color/new_theme_color"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易分润比例"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv11"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易分润"
+                        android:textColor="#FC8933"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv12"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#FC8933"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="管理津贴"
+                        android:textColor="#00C7E1"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv13"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#00C7E1"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="皇冠比例"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv14"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="皇冠奖金"
+                        android:textColor="#FFDA44"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv15"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#FFDA44"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="钻石奖金"
+                        android:textColor="#ACD598"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv16"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ACD598"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分润补贴"
+                        android:textColor="#F19EC2"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv17"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#F19EC2"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="五项总计"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv18"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="五项税后"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/bill_detail_tv19"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="113笔"
+                        android:textColor="#ff969696"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

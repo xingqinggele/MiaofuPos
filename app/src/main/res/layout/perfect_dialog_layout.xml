@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/perfect_dialog_bg"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_marginTop="180dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完善个人信息"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资料填写不完整，请完善资料信息"
+            android:textColor="#999999"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/perfect_into"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginRight="68dp"
+            android:layout_marginBottom="19dp"
+            android:background="@drawable/login_btn_on_bg"
+            android:text="马上完善"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/perfect_out"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:src="@mipmap/version_dialog_out_iv" />
+
+</LinearLayout>

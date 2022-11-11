@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+
+        <RelativeLayout
+            android:background="@color/new_theme_color"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_whilte_left" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置支付密码"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_me_line_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:editable="false"
+            android:id="@+id/me_pay_password_phone_ed"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="26dp"
+            android:background="@null"
+            android:drawableLeft="@mipmap/new_pay1"
+            android:drawablePadding="10dp"
+            android:hint="请输入手机号"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E5E5E5" />
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+
+            <EditText
+                android:maxLength="6"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/pay_password_code_ed"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/pay_password_mCode_tv"
+                android:textSize="14sp"
+                android:drawablePadding="10dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/new_pay2"
+                android:hint="请输入验证码"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+            <TextView
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:id="@+id/pay_password_mCode_tv"
+                android:layout_centerVertical="true"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/small_merchants_tv_bg"
+                android:layout_alignParentRight="true"
+                android:textSize="13sp"
+                android:text="获取验证码"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E5E5E5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+<!--        <EditText-->
+<!--            android:maxLength="6"-->
+<!--            android:singleLine="true"-->
+<!--            android:id="@+id/pay_password_id_card_ed"-->
+<!--            android:textSize="14sp"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:background="@null"-->
+<!--            android:drawableLeft="@mipmap/new_pay3"-->
+<!--            android:hint="身份证后六位"-->
+<!--            android:layout_marginLeft="26dp"-->
+<!--            android:layout_marginRight="26dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"/>-->
+
+<!--        <View-->
+<!--            android:layout_marginBottom="31dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="#E5E5E5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"/>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/pay_password_bt"
+        android:textColor="#B2B1B1"
+        android:background="@drawable/pay_password_btn_bg"
+        android:textSize="16sp"
+        android:text="下一步"
+        android:layout_marginTop="39dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+</LinearLayout>

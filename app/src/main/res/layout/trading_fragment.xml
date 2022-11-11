@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/main_me_line_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/monthAmount"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:textSize="24sp"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="本月交易额(元）"
+                        android:textColor="#ffaaaaaa"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:background="#E5E5E5"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/allAmount"
+                        android:layout_marginTop="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:textSize="24sp"
+                        />
+
+                    <TextView
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计交易额(元）"
+                        android:textColor="#ffaaaaaa"
+                        android:textSize="12sp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/new_theme_color" />
+
+                <TextView
+                    android:id="@+id/merchants_big_detail_tv14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:text="本月交易明细"
+                    android:textColor="#919191"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical"
+                android:background="@drawable/main_me_line_bg"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="刷卡交易额"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tmonthAmount"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tnum"
+                        android:layout_marginRight="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+
+<!--                    <TextView-->
+<!--                        android:layout_marginLeft="11dp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Pay交易额"-->
+<!--                        android:textColor="#ff606060"-->
+<!--                        android:textSize="13sp"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/flash_pay"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:textColor="#ff606060"-->
+<!--                        android:textSize="13sp" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/fb_num"-->
+<!--                        android:layout_marginRight="11dp"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#ff606060"-->
+<!--                        android:textSize="13sp"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+                <RelativeLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_marginLeft="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扫码交易额"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/scan_the_code"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/stc_num"
+                        android:layout_marginRight="11dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff606060"
+                        android:textSize="13sp"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

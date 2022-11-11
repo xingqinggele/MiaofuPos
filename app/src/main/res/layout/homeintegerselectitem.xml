@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="16sp"
+        android:id="@+id/homeintegerselectitem_name"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="机器类型"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        app:layout_constraintRight_toLeftOf="@+id/homeintegerselectitem_num"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@+id/homeintegerselectitem_name"
+        android:id="@+id/homeintegerselectitem_seletc"
+        app:layout_constraintBottom_toBottomOf="@+id/homeintegerselectitem_name"
+        android:text="(2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/homeintegerselectitem_num"
+        app:layout_constraintBottom_toBottomOf="@+id/homeintegerselectitem_name"
+        app:layout_constraintTop_toTopOf="@+id/homeintegerselectitem_name"
+        android:text="/5)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</android.support.constraint.ConstraintLayout>

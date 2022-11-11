@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/new_theme_color">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我的积分"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@mipmap/home_integral_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/home_integral_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总可用积分"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/home_integral_tv_num"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/home_integral_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:textSize="39sp"
+            />
+
+        <TextView
+            android:id="@+id/home_integral_tv_detail"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/home_integral_tv_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/home_integral_tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="积分明细"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/main_me_line_bg"
+        android:layout_marginTop="-45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/general_integral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/new_theme_color"
+                android:textSize="18sp"
+                />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通用积分"
+                android:textColor="#ff989898"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:background="#C6C6C6"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/activity_integral_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/new_theme_color"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动积分"
+                android:textColor="#ff989898"
+                android:textSize="13sp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/home_integral_btn_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/login_btn_on_bg"
+        android:text="兑换积分"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>

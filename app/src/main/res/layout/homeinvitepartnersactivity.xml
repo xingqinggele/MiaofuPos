@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_theme_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/home_invitepar_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="邀请伙伴"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/home_invitepar_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ceshi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/home_invitepar_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/homeinvitepartners_bg"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/user_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="37dp"
+                    android:text="王小小"
+                    android:textColor="#389DFF"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/user_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/homeinvitepartnersactivity_tv_bg"
+                    android:drawableLeft="@mipmap/small_phone"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="15966881234"
+                    android:textColor="#ffffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/home_inviterpar_mercode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/home_invitepartnesr_tv_line"
+                    android:textColor="#389DFF"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/home_invitepar_img"
+                    android:layout_width="204dp"
+                    android:layout_height="206dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/slm_ewm_iv" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/generate_code_tv"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/home_invitepartners_tv_bg"
+                android:gravity="center"
+                android:text="去填写"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/liner_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="37dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/home_invitepar_tv_save"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_invitepartners_tv_bg1"
+                    android:gravity="center"
+                    android:text="保存图片"
+                    android:textColor="#389DFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edit_clink"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/home_invitepartners_tv_bg"
+                    android:gravity="center"
+                    android:text="去修改"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

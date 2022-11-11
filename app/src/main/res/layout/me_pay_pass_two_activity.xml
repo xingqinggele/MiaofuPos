@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+        <RelativeLayout
+            android:background="@color/new_theme_color"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_whilte_left" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置支付密码"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_me_line_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:background="#FFF6DE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:src="@mipmap/pay_pass_two_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="为确保您的账户安全，请设置支付密码"
+                android:textColor="#ffe6bf73"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="支付密码"
+                android:textColor="#ff4b4b4b"
+                android:textSize="15sp" />
+
+            <EditText
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:numeric="integer"
+                android:id="@+id/me_pay_pass_two_word_ed"
+                android:textSize="14sp"
+                android:hint="请输入六位数字支付密码"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E5E5E5" />
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="确认密码"
+                android:textColor="#ff4b4b4b"
+                android:textSize="15sp" />
+
+            <EditText
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:numeric="integer"
+                android:id="@+id/me_pay_pass_two_word_ed1"
+                android:textSize="14sp"
+                android:hint="请再次确认密码"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="24dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*不能是连续重复数字"
+        android:textColor="#ffc6c6c6"
+        android:textSize="11sp"
+        />
+
+    <Button
+        android:id="@+id/me_pay_pass_two_bt"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn_on_bg"
+        android:textSize="16sp"
+        android:text="完成"
+        android:layout_marginTop="39dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+
+</LinearLayout>

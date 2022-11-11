@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_me_line_bg"
+    android:layout_marginBottom="16dp"
+>
+    <TextView
+        android:background="@drawable/recordlist_tv_bg"
+        android:id="@+id/item_callback_record_item_title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回调成功"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/item_callback_record_item_liner"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/item_callback_record_item_title"
+        app:layout_constraintTop_toTopOf="@+id/item_callback_record_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_callback_record_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="#3CA0FF"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:layout_marginLeft="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="台"
+            android:textColor="#787878"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <View
+        android:background="@drawable/shape_dotted_line"
+        android:layerType="software"
+        android:id="@+id/view"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_callback_record_item_liner"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回调者"
+        android:textColor="#ff949494"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/item_callback_record_item_issued_person"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刘菲菲"
+        android:textColor="#ff646464"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginTop="19dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="接受者"
+        android:textColor="#ff949494"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/item_callback_record_item_accept_person"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刘菲菲"
+        android:textColor="#ff646464"
+        android:textSize="14sp"
+        />
+
+    <TextView
+
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv3"
+        android:layout_marginTop="19dp"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建时间"
+        android:textColor="#ff949494"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/item_callback_record_item_time"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-12-20 14:05"
+        android:textColor="#ff646464"
+        android:textSize="14sp"
+        />
+</android.support.constraint.ConstraintLayout>

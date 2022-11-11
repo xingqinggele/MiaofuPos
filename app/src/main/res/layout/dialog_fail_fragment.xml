@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/background_select_fragment">
+
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:textColor="#3A3A3A"
+        android:text="提示"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dialog_tv1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/dialog_title"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title"
+        android:text="您当前只能选择1台设备划拨"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <TextView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_goneMarginBottom="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_tv1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FF9920"
+        android:id="@+id/dialog_determine"
+        android:layout_marginTop="50dp"
+        android:text="我知道了"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_theme_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <LinearLayout
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_whilte_left" />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实名认证信息填写"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="22dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/merchants_detail_iv_my1"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/small_merchants_progress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="55dp"
+                android:layout_below="@+id/merchants_detail_iv_my1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="基本信息"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                />
+
+            <TextView
+                android:id="@+id/merchants_detail_tv1"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="9dp"
+                android:layout_below="@+id/merchants_detail_iv_my1"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="营业信息"
+                android:textColor="#ffffffff"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/merchant_detail2_line2"
+                    android:background="@drawable/main_me_line_bg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/merchants_detail2_tv4"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="结算卡号"
+                            android:textColor="#4C4C4C"
+                            android:textSize="12sp"
+                            />
+                        <TextView
+                            android:id="@+id/merchants_datail2_tv4"
+                            android:textColor="#F80C0C"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv4"
+                            android:layout_centerVertical="true"
+                            android:text="*"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <EditText
+                            android:inputType="number"
+                            android:layout_toLeftOf="@+id/bank_btn"
+                            android:textColor="#000000"
+                            android:id="@+id/merchant_detail2_number"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:paddingRight="12dp"
+                            android:gravity="center_vertical|right"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:textSize="12sp"
+                            android:hint="请输入卡号"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/merchants_datail2_tv4"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+
+                        <ImageView
+                            android:id="@+id/bank_btn"
+                            android:src="@mipmap/bank_btn_iv"
+                            android:layout_marginRight="16dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_width="17dp"
+                            android:layout_height="16dp"/>
+
+
+                    </RelativeLayout>
+                    <View
+                        android:background="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/merchants_detail2_tv5"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开户行"
+                            android:textColor="#4C4C4C"
+                            android:textSize="12sp"
+                            />
+                        <TextView
+                            android:id="@+id/merchants_detail2_tv6"
+                            android:textColor="#F80C0C"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv5"
+                            android:layout_centerVertical="true"
+                            android:text="*"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:textColor="#000000"
+                            android:gravity="right"
+                            android:layout_marginLeft="20dp"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv6"
+                            android:hint="请选择开户行"
+                            android:id="@+id/merchant_detail_address"
+                            android:layout_marginRight="27dp"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/merchant_detail2_iv1"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/back_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:background="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/merchants_detail2_tv7"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="开户城市"
+                            android:textColor="#4C4C4C"
+                            android:textSize="12sp"
+                            />
+                        <TextView
+                            android:id="@+id/merchants_detail2_tv8"
+                            android:textColor="#F80C0C"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv7"
+                            android:layout_centerVertical="true"
+                            android:text="*"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:id="@+id/merchant_detail_city"
+                            android:textColor="#000000"
+                            android:gravity="right"
+                            android:layout_marginLeft="15dp"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv8"
+                            android:hint="请选择城市"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/merchant_detail2_iv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="12sp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/merchant_detail2_iv2"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/back_right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/merchant_detail2_line3"
+                    android:background="@drawable/main_me_line_bg"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_below="@+id/merchant_detail2_line2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:id="@+id/merchants_detail2_tv11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商户手机号（用作商户查看交易时的登录账户）"
+                            android:textColor="#ff4c4c4c"
+                            android:textSize="12sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/merchants_detail2_tv12"
+                            android:textColor="#F80C0C"
+                            android:layout_toRightOf="@+id/merchants_detail2_tv11"
+                            android:layout_centerVertical="true"
+                            android:text="*"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:maxLength="11"
+                        android:inputType="number"
+                        android:enabled="false"
+                        android:textColor="#000000"
+                        android:id="@+id/merchants_detail2_phone"
+                        android:layout_marginLeft="12dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:paddingRight="12dp"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:textSize="12sp"
+                        android:hint="请输入手机号"
+                        android:layout_marginRight="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"/>
+
+
+                    <View
+                        android:background="#F3F3F3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                    <RelativeLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+
+                        <EditText
+                            android:id="@+id/merchant_detail2_et_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="18dp"
+                            android:layout_toLeftOf="@+id/merchant_detail2_verification_code"
+                            android:background="@null"
+                            android:hint="请输入验证码"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:maxLines="1"
+                            android:paddingRight="12dp"
+                            android:singleLine="true"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:background="@drawable/small_merchants_tv_bg"
+                            android:id="@+id/merchant_detail2_verification_code"
+                            android:layout_marginRight="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="获取验证码"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/merchant_detail_submit"
+                    android:background="@color/new_theme_color"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:text="提交"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"/>
+
+            </RelativeLayout>
+
+</LinearLayout>

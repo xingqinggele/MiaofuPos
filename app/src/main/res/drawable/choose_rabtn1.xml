@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    选中图片-->
+    <item android:drawable="@color/new_theme_color" android:state_checked="true" />
+<!--   未选中图片-->
+    <item android:drawable="@color/white"/>
+</selector>

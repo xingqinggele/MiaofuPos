@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_me_line_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/pay_dialog_kill"
+        app:layout_constraintBottom_toBottomOf="@+id/tv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_margin="20dp"
+            android:src="@mipmap/cha_out"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:textColor="#333333"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tv1"
+        android:text="请输入支付密码"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="#515151"
+        android:textSize="15sp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        android:id="@+id/pay_dialog_wallet_type_tv"
+        android:text="零钱提现"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="18dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_dialog_wallet_type_tv"
+        android:id="@+id/pay_dialog_price_tv"
+        android:text="￥1.00"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/v1"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:background="#F3F3F3"
+        app:layout_constraintTop_toBottomOf="@+id/pay_dialog_price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#A0A0A0"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/v1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="服务费"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/pay_dialog_minimum_price_tv"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥0.01"
+        android:textColor="#ff434242"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#A0A0A0"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="费率"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/pay_dialog_minimum_rate_tv"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv3"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.9%"
+        android:textColor="#ff434242"
+        android:textSize="15sp"
+        />
+
+    <com.jungly.gridpasswordview.GridPasswordView
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_dialog_minimum_rate_tv"
+        android:id="@+id/pswView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="20dp"
+        app:gpvGridColor="#ffffff"
+        app:gpvLineColor="#E5E5E5"
+        app:gpvLineWidth="1dp"
+        app:gpvPasswordLength="6"
+        app:gpvPasswordTransformation="●"
+        app:gpvTextColor="#000000"
+        app:gpvTextSize="15sp"
+        app:gpvPasswordType="numberPassword"
+        />
+</android.support.constraint.ConstraintLayout>

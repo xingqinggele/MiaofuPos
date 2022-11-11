@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--内容框-->
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!--按钮框-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:orientation="vertical">
+        <!--线-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dddddd" />
+        <!--按钮框-->
+        <RadioGroup
+            android:id="@+id/rg_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <!--首页按钮-->
+            <RadioButton
+                android:id="@+id/main_rb1"
+                style="@style/main_radioButton_style"
+                android:drawableTop="@drawable/main_tab1"
+                android:text="首页" />
+
+            <!--数据按钮-->
+            <RadioButton
+                android:id="@+id/main_rb2"
+                style="@style/main_radioButton_style"
+                android:drawableTop="@drawable/main_tab2"
+                android:text="数据" />
+            <!--我的按钮-->
+            <RadioButton
+                android:id="@+id/main_rb3"
+                style="@style/main_radioButton_style"
+                android:drawableTop="@drawable/main_tab3"
+                android:text="我的" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

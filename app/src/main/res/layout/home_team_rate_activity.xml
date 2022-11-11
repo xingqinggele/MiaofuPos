@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_theme_color">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rela1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:padding="5dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改伙伴费率"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="27dp">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="请选择以下申请人信息"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/new_releyout"
+        android:layout_below="@+id/liner1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/line_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/js_flt1_relative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/fill_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fill_tv1"
+                    android:text="信用卡结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/js_flt1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawableRight="@mipmap/quote_activity_select_iv"
+                    android:drawablePadding="11dp"
+                    android:gravity="center"
+                    android:hint="请选择结算费率"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:id="@+id/js_flt0_relative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/fill_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fill_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/js_flt0_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:drawableRight="@mipmap/quote_activity_select_iv"
+                    android:drawablePadding="11dp"
+                    android:gravity="center"
+                    android:hint="请选择结算费率"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+            <RelativeLayout
+                android:id="@+id/serverThreeSixRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/serverThreeSix_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/serverThreeSixTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverThreeSix_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/serverThreeSixTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverThreeSixTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+                    android:id="@+id/serverThreeSixEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/serverThreeSixTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:id="@+id/serverFourEightRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/serverFourEight_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/serverFourEightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverFourEight_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/serverFourEightTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverFourEightTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+
+                    android:id="@+id/serverFourEightEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/serverFourEightTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:id="@+id/serverNineNineRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/serverNineNine_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/serverNineNineTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverNineNine_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/serverNineNineTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverNineNineTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+
+                    android:id="@+id/serverNineNineEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/serverNineNineTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:id="@+id/serverTwoNineNineRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/serverTwoNineNine_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/serverTwoNineNineTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverTwoNineNine_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/serverTwoNineNineTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/serverTwoNineNineTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+
+                    android:id="@+id/serverTwoNineNineEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/serverTwoNineNineTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+
+
+            <RelativeLayout
+                android:id="@+id/flowTwoFour_relayout"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/flowTwoFour_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/flowTwoFourTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowTwoFour_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/flowTwoFour_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowTwoFourTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+                    android:id="@+id/flowTwoFourEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/flowTwoFour_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/flowThreeSixRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/flowThreeSix_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/flowThreeSixTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowThreeSix_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/flowThreeSixTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowThreeSixTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+                    android:id="@+id/flowThreeSixEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/flowThreeSixTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:id="@+id/flowFourEightRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/flowFourEight_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/flowFourEightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowFourEight_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/flowFourEightTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowFourEightTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+                    android:id="@+id/flowFourEightEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/flowFourEightTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#F3F3F3" />
+            <RelativeLayout
+                android:id="@+id/flowNineNineRelative"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/flowNineNine_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="*"
+                    android:textColor="#F80C0C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/flowNineNineTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowNineNine_tv2"
+                    android:text="扫码结算"
+                    android:textColor="#302F2F"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#F80C0C"
+                    android:id="@+id/flowNineNineTv_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/flowNineNineTv"
+                    android:text="(0~100)"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:paddingRight="11dp"
+                    android:layout_marginRight="12dp"
+                    android:gravity="right|center"
+                    android:text="0"
+                    android:id="@+id/flowNineNineEdit"
+                    android:background="@null"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/flowNineNineTv_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/new_releyout"
+        android:layout_above="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="返现开关（包括服务费和流量费）" />
+
+        <com.example.miaofupos.views.SwitchButtonView
+            android:id="@+id/swith_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/home_invitepartners_tv_bg2"
+        android:gravity="center"
+        android:text="立即修改"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

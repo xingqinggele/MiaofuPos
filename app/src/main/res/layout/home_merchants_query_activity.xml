@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f5f5f5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/theme_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/merchant_squery_relative"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <LinearLayout
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="25dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/main_left_return" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商户查询"
+                    android:textColor="#ff333333"
+                    android:textSize="18sp"
+                    />
+
+            </RelativeLayout>
+
+            <EditText
+                android:paddingRight="20dp"
+                android:drawableRight="@mipmap/search_rhgit_iv"
+                android:imeOptions="actionSearch"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/merchant_squery_relative"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:id="@+id/merchants_query_search_ed"
+                android:textColor="#ff333333"
+                android:textColorHint="#F5D347"
+                android:textSize="15sp"
+                android:hint="请输入商户名称"
+                android:paddingLeft="20dp"
+                android:background="@drawable/home_team_search_ed_bg"
+                android:layout_marginRight="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"/>
+
+            <LinearLayout
+                android:id="@+id/terminal_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchants_query_search_ed"
+                android:layout_alignLeft="@+id/merchants_query_search_ed"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/merchants_query_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="#ffffffff"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="条"
+                    android:textColor="#ffffffff"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_marginTop="13dp"
+            android:id="@+id/query_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/query_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

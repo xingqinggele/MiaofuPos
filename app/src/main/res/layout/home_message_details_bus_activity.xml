@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/new_theme_color">
+
+        <LinearLayout
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="25dp"
+                android:src="@mipmap/back_whilte_left" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/home_message_details_bus_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="消息详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/main_me_line_bg">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/home_message_details_bus_content_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/business_message_iv4" />
+
+            <TextView
+                android:id="@+id/home_message_details_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:gravity="center"
+                android:text="20201109汇拓客交易分润日报报表下载通知"
+                android:textColor="#ff333333"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="13dp"
+            android:background="#E5E5E5" />
+
+        <TextView
+            android:id="@+id/home_message_details_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="19dp"
+            android:text="您20201112的交易分润日报已经生成，下载地址：https://htk.lakala.com/report/dowload?id=41601856，密码：993782请使用PC端下载，手机端暂不支持下载, 推荐使用谷歌浏览器下载。下载链接有效时间为15天，请及时下载。"
+            android:textColor="#ff626262"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_marginRight="19dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/home_message_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_message_details_content"
+            android:layout_marginTop="39dp"
+            android:layout_marginBottom="20dp"
+            android:text="2020-10-25"
+            android:textColor="#ff5b5b5b"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

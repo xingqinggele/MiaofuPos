@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/main_me_line_bg"
+
+ >
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/item_me_exchange_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/item_me_exchange_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/item_me_exchange_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:text="电签POS"
+        android:textColor="#646262"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/item_me_exchange_logo"
+        app:layout_constraintTop_toTopOf="@+id/item_me_exchange_logo" />
+
+
+    <TextView
+        android:id="@+id/item_me_exchange_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="￥120"
+        android:textColor="@color/new_theme_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_me_exchange_logo"
+        app:layout_constraintLeft_toLeftOf="@+id/item_me_exchange_type" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="/台"
+        android:textColor="#ffa0a0a0"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_me_exchange_price"
+        app:layout_constraintLeft_toRightOf="@+id/item_me_exchange_price" />
+
+
+
+
+        <TextView
+
+            app:layout_constraintBottom_toBottomOf="@+id/item_me_exchange_logo"
+            app:layout_constraintTop_toTopOf="@+id/item_me_exchange_logo"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/item_good_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x0"
+            android:textColor="#636363"
+            android:textSize="14sp" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

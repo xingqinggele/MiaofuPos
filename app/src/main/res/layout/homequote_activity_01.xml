@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical">
+    <!--顶部部分-->
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/new_theme_color"
+        android:orientation="vertical">
+        <!--标题框-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <!--返回键-->
+            <LinearLayout
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/back_whilte_left" />
+
+            </LinearLayout>
+            <!--标题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="商户进件"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <!--进度条-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="12dp">
+
+            <ImageView
+                android:id="@+id/merchants_detail_iv_my1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/quote_activity_iv1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchants_detail_iv_my1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="9dp"
+                android:text="完善基础信息"
+                android:textColor="#ffffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchants_detail_iv_my1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="身份认证"
+                android:textColor="#9CCEFF"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/merchants_detail_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchants_detail_iv_my1"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="9dp"
+                android:layout_marginRight="40dp"
+                android:text="银行卡认证"
+                android:textColor="#9CCEFF"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--内容部分-->
+    <ScrollView
+        android:id="@+id/scro_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/submit_bt"
+        android:layout_below="@+id/top_view"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/merchant_detail_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="33dp"
+                android:background="@drawable/main_me_line_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="12dp">
+
+                    <TextView
+                        android:layout_width="4dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/new_theme_color" />
+
+                    <TextView
+                        android:id="@+id/merchants_detail_tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:text="申请人信息"
+                        android:textColor="#4C4C4C"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#F3F3F3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/quote_tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*"
+                        android:textColor="#F80C0C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/quote_tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/quote_tv1"
+                        android:text="设备SN码 "
+                        android:textColor="#302F2F"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/quote_sn_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="17dp"
+                        android:layout_toRightOf="@+id/quote_tv11"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入设备SN码"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#F3F3F3" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/quote_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*"
+                        android:textColor="#F80C0C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/quote_tv33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/quote_tv3"
+                        android:text="联系电话"
+                        android:textColor="#302F2F"
+                        android:textSize="12sp" />
+
+                    <EditText
+                        android:id="@+id/quote_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/quote_tv33"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:hint="请输入申请人联系电话"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:numeric="integer"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#F3F3F3" />
+
+                <RelativeLayout
+                    android:id="@+id/province_relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/quote_tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*"
+                        android:textColor="#F80C0C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/quote_tv55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/quote_tv5"
+                        android:text="商户注册省市区"
+                        android:textColor="#302F2F"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/province_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/quote_activity_select_iv"
+                        android:drawablePadding="11dp"
+                        android:gravity="center"
+                        android:hint="请选择商户注册省市区"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="#F3F3F3" />
+
+                <RelativeLayout
+                    android:id="@+id/terminal_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:id="@+id/quote_tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="*"
+                        android:textColor="#F80C0C"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/quote_tv10"
+                        android:text="终端费率"
+                        android:textColor="#302F2F"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/terminal_rate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@mipmap/quote_activity_select_iv"
+                        android:drawablePadding="11dp"
+                        android:gravity="center"
+                        android:hint="请选择终端费率"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/toast_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/merchant_detail_line1"
+                android:layout_marginLeft="10dp"
+                android:text="*您只能修改终端费率、银行卡选项！"
+                android:textColor="@color/txy_red"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/new_theme_color"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

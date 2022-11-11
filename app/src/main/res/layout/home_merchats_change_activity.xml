@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+
+    <RelativeLayout
+        android:background="@color/theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/merchant_squery_relative"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <LinearLayout
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:padding="5dp"
+                    android:src="@mipmap/main_left_return" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商户变更"
+                android:textColor="#ff333333"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <RadioGroup
+            android:layout_below="@+id/merchant_squery_relative"
+            android:id="@+id/home_merchants_change_radio"
+            android:layout_marginTop="31dp"
+            android:padding="2dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/home_merchants_change_radio_group"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+            <RadioButton
+                android:textColor="@drawable/txtcolor"
+                android:checked="true"
+                android:background="@drawable/home_merchants_change_radio_btn"
+                android:id="@+id/r1"
+                android:button="@null"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="商户"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <RadioButton
+                android:textColor="@drawable/txtcolor"
+                android:background="@drawable/home_merchants_change_radio_btn"
+                android:id="@+id/r2"
+                android:button="@null"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="变更审核进度"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+        </RadioGroup>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/home_merchants_manager_tv"
+            android:drawablePadding="17dp"
+            android:gravity="center"
+            android:drawableRight="@mipmap/home_merchants_manager_tv2"
+            android:drawableLeft="@mipmap/home_merchants_manager_tv1"
+            android:background="@drawable/home_merchats_manager_tv_bg"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/home_merchants_change_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            android:textColor="#000"
+            android:textSize="15sp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_merchants_change_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</LinearLayout>
