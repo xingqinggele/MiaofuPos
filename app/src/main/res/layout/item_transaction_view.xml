@@ -7,49 +7,230 @@
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/trans_top"
-        app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:layout_marginLeft="15dp"
-            android:id="@+id/trans_name"
+            android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="15dp"
-            android:textColor="@color/black"
+            android:text="商户名称："
+            android:textColor="#989898"
             android:textSize="13sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
-            android:id="@+id/trans_time"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/trans_price"
+            android:id="@+id/trans_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+            app:layout_constraintLeft_toRightOf="@+id/tv1"
+            app:layout_constraintTop_toTopOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:text="2021-10-29 16:53:13"
+            android:text="商户编号："
+            android:textColor="#989898"
             android:textSize="13sp"
-            app:layout_constraintLeft_toLeftOf="@+id/trans_name"
+            app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/trans_name" />
 
 
         <TextView
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="15dp"
-            android:id="@+id/trans_price"
-            android:layout_width="wrap_content"
+            android:layout_marginRight="5dp"
+            app:layout_constraintRight_toLeftOf="@+id/trans_static"
+            android:id="@+id/trans_number"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="3699"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintLeft_toRightOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@+id/tv2" />
+
+
+        <TextView
+            android:id="@+id/trans_price"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv1"
+            app:layout_constraintTop_toTopOf="@+id/tv1"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/trans_static"
             android:textColor="#29D385"
             android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="@+id/trans_time"
-            app:layout_constraintTop_toTopOf="@+id/trans_name" />
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv2"
+            app:layout_constraintTop_toTopOf="@+id/tv2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="交易名称："
+            android:textColor="#989898"
+            android:textSize="13sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trans_static" />
+
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/trans_number"
+            android:id="@+id/trans_type"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintRight_toLeftOf="@+id/trans_card_type"
+            app:layout_constraintBottom_toBottomOf="@+id/trans_card_type"
+            app:layout_constraintTop_toTopOf="@+id/trans_card_type"
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卡类型："
+            android:textColor="#989898"
+            android:textSize="13sp"
+           />
+
+        <TextView
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/trans_card_type"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv3"
+            app:layout_constraintTop_toTopOf="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintRight_toLeftOf="@+id/trans_rate"
+            app:layout_constraintBottom_toBottomOf="@+id/trans_rate"
+            app:layout_constraintTop_toTopOf="@+id/trans_rate"
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="费率："
+            android:textColor="#989898"
+            android:textSize="13sp"
+      />
+
+        <TextView
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/trans_rate"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv7"
+            app:layout_constraintTop_toTopOf="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="银行卡号："
+            android:textColor="#989898"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/trans_number"
+            app:layout_constraintLeft_toRightOf="@+id/tv7"
+            android:id="@+id/trans_bank_card"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv7"
+            app:layout_constraintTop_toTopOf="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/trans_rate"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易时间："
+            android:textColor="#989898"
+            android:textSize="13sp"
+            />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/trans_number"
+            app:layout_constraintLeft_toRightOf="@+id/tv6"
+            android:id="@+id/trans_time"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv6"
+            app:layout_constraintTop_toTopOf="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/trans_agent"
+            android:textColor="#29D385"
+            android:textSize="13sp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv6"
+            app:layout_constraintTop_toTopOf="@+id/tv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
 
         <View
             android:layout_marginRight="15dp"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/shape_dotted_line"
             android:layerType="software"
             android:id="@+id/view"

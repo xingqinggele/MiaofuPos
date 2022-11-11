@@ -911,14 +911,24 @@ public class HttpRequest {
     }
 
 
- /**
+// /**
+//     * 交易记录列表
+//     *
+//     * @param params
+//     * @param callback
+//     */
+//    public static void putRecordList(RequestParams params, String token, ResponseCallback callback) {
+//        RequestMode.postRequest(Urls.commUrls + "merchant/transactions/record", params, token, callback, null);
+//    }
+
+    /**
      * 交易记录列表
      *
      * @param params
      * @param callback
      */
-    public static void putRecordList(RequestParams params, String token, ResponseCallback callback) {
-        RequestMode.postRequest(Urls.commUrls + "merchant/transactions/record", params, token, callback, null);
+    public static void putRecordList(RequestParams params,String token, ResponseCallback callback) {
+        RequestMode.postRequest(Urls.commUrls + "merchant/transactions/recordNew", params,token,callback, null);
     }
 
  /**
